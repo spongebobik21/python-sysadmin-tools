@@ -1,0 +1,14 @@
+[Unit]
+Description=Python System Health Monitor
+After=network.target
+
+[Service]
+Type=simple
+User=asponge
+WorkingDirectory=/home/asponge/python-sysadmin-tools
+ExecStart=/usr/bin/python3 /home/asponge/python-sysadmin-tools/disk_checker.py
+Restart=on-failure
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
