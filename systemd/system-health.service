@@ -4,9 +4,9 @@ After=network.target
 
 [Service]
 Type=simple
-User=asponge
-WorkingDirectory=/home/asponge/python-sysadmin-tools
-ExecStart=/usr/bin/python3 /home/asponge/python-sysadmin-tools/disk_checker.py
+User=YOUR_USERNAME
+WorkingDirectory=/path/to/python-sysadmin-tools
+ExecStart=/usr/bin/python3 /path/to/python-sysadmin-tools/disk_checker.py
 Restart=on-failure
 RestartSec=10
 
